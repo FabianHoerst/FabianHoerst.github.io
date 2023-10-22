@@ -1,25 +1,27 @@
 ---
-title: "CellViT: Vision Transformers for Precise Cell Segmentation and Classification"
+title: "Valuing vicinity: Memory attention framework for context-based semantic segmentation in histopathology"
 authors:
+- Oliver Ester
 - admin
-- Moritz Rempe
-- Lukas Heine
 - Constantin Seibold
 - Julius Keyl
-- Giulia Baldini
-- Selma Ugurel
-- Jens Siveke
-- Barbara Grünwald
+- Saskia Ting
+- Nikolaos Vasileiadis
+- Jessica Schmitz
+- Philipp Ivanyi
+- Viktor Grünwald
+- Jan Hinrich Bräsen
 - Jan Egger
 - Jens Kleesiek
+
 # author_notes:
 # - "Equal contribution"
 # - "Equal contribution"
-date: "2023-06-10T00:00:00Z"
-doi: "https://doi.org/10.48550/arXiv.2306.15350"
+date: "2023-07-01T00:00:00Z"
+doi: "https://doi.org/10.1016/j.compmedimag.2023.102238"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2023-06-10T00:00:00Z"
+publishDate: "2023-07-01T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -30,20 +32,20 @@ publication_types: ["article-journal"]
 # publication: "*Journal of Source Themes, 1*(1)"
 # publication_short: ""
 
-abstract: Nuclei detection and segmentation in hematoxylin and eosin-stained (H&E) tissue images are important clinical tasks and crucial for a wide range of applications. However, it is a challenging task due to nuclei variances in staining and size, overlapping boundaries, and nuclei clustering. While convolutional neural networks have been extensively used for this task, we explore the potential of Transformer-based networks in this domain. Therefore, we introduce a new method for automated instance segmentation of cell nuclei in digitized tissue samples using a deep learning architecture based on Vision Transformer called CellViT. CellViT is trained and evaluated on the PanNuke dataset, which is one of the most challenging nuclei instance segmentation datasets, consisting of nearly 200,000 annotated Nuclei into 5 clinically important classes in 19 tissue types. We demonstrate the superiority of large-scale in-domain and out-of-domain pre-trained Vision Transformers by leveraging the recently published Segment Anything Model and a ViT-encoder pre-trained on 104 million histological image patches - achieving state-of-the-art nuclei detection and instance segmentation performance on the PanNuke dataset with a mean panoptic quality of 0.50 and an F1-detection score of 0.83.
+abstract: The segmentation of histopathological whole slide images into tumourous and non-tumourous types of tissue is a challenging task that requires the consideration of both local and global spatial contexts to classify tumourous regions precisely. The identification of subtypes of tumour tissue complicates the issue as the sharpness of separation decreases and the pathologist’s reasoning is even more guided by spatial context. However, the identification of detailed tissue types is crucial for providing personalized cancer therapies. Due to the high resolution of whole slide images, existing semantic segmentation methods, restricted to isolated image sections, are incapable of processing context information beyond. To take a step towards better context comprehension, we propose a patch neighbour attention mechanism to query the neighbouring tissue context from a patch embedding memory bank and infuse context embeddings into bottleneck hidden feature maps. Our memory attention framework (MAF) mimics a pathologist’s annotation procedure — zooming out and considering surrounding tissue context. The framework can be integrated into any encoder–decoder segmentation method. We evaluate the MAF on two public breast cancer and liver cancer data sets and an internal kidney cancer data set using famous segmentation models (U-Net, DeeplabV3) and demonstrate the superiority over other context-integrating algorithms — achieving a substantial improvement of up to 17% on Dice score. The code is publicly available at https://github.com/tio-ikim/valuing-vicinity.
 
 # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
 - Source Themes
-featured: true
+featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://arxiv.org/pdf/2306.15350.pdf
-url_code: 'https://github.com/TIO-IKIM/CellViT'
+url_pdf: 'https://www.sciencedirect.com/science/article/pii/S0895611123000563'
+url_code: 'https://github.com/tio-ikim/valuing-vicinity'
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -63,7 +65,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: [cellvit]
+projects: []
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
