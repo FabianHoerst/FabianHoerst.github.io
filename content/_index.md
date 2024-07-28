@@ -187,6 +187,18 @@ sections:
   #   design:
   #     columns: '1'
   - block: collection
+    id: talks
+    content:
+      title: Recent & Upcoming Talks
+      filters:
+        folders:
+          - event
+    design:
+      card:
+        # Card background color (CSS class)
+        css_class: "bg-primary-700"
+        css_style: ""
+  - block: collection
     id: featured
     content:
       title: Featured Publications

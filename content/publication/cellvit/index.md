@@ -16,7 +16,7 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 date: "2023-06-10T00:00:00Z"
-doi: "https://doi.org/10.48550/arXiv.2306.15350"
+doi: "https://doi.org/10.1016/j.media.2024.103143"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: "2023-06-10T00:00:00Z"
@@ -42,7 +42,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://arxiv.org/pdf/2306.15350.pdf
+url_pdf: https://doi.org/10.1016/j.media.2024.103143
 url_code: 'https://github.com/TIO-IKIM/CellViT'
 url_dataset: ''
 url_poster: ''

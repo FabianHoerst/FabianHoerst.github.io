@@ -63,7 +63,7 @@ skills:
       percent: 80
       icon: robot
       icon_pack: fas
-  - name: Languages/Frameworks
+  - name: Languages/Frameworks/Toolstack
     items:
     - name: Python
       description: ''
@@ -85,6 +85,21 @@ skills:
       percent: 80
       icon: palette
       icon_pack: fas
+    - name: Docker
+      description: ''
+      percent: 70
+      icon: docker
+      icon_pack: fab
+    - name: Kubeflow
+      description: ''
+      percent: 70
+      icon: air-freshener
+      icon_pack: fas
+    - name: Javascript
+      description: ''
+      percent: 40
+      icon: js
+      icon_pack: fab
   - name: Softskills
     items:
     - name: Academic Writing

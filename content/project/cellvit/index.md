@@ -35,7 +35,9 @@ url_video: ''
 slides: ""
 ---
 
-CellViT is an advanced deep learning-based method designed for automated instance segmentation of cell nuclei within digitized tissue samples. This project achieves exceptional performance, surpassing existing methods with remarkable results on the challenging PanNuke dataset. Some key features of CellViT include:
+CellViT is an advanced deep learning-based method designed for automated instance segmentation of cell nuclei within digitized tissue samples. This project achieves exceptional performance, surpassing existing methods with remarkable results on the challenging PanNuke dataset. The software is widely used in the community, with **>175 stars on GitHub and >30.000 website accesses**. CellViT is used by many research institutes, including Harvard University.
+
+Some key features of CellViT include:
 
 - **State-of-the-Art Performance**: CellViT outperforms existing methods for nuclei instance segmentation, achieving a mean panoptic quality of 0.51 and an F1-detection score of 0.83 on the PanNuke dataset.
 
@@ -52,11 +54,16 @@ This powerful tool is an essential asset in the field of computational pathology
 **Citation**
 
 ```latex
-@misc{hörst2023cellvit,
-      title={CellViT: Vision Transformers for Precise Cell Segmentation and Classification},
-      author={Fabian Hörst and Moritz Rempe and Lukas Heine and Constantin Seibold and Julius Keyl and Giulia Baldini and Selma Ugurel and Jens Siveke and Barbara Grünwald and Jan Egger and Jens Kleesiek},
-      year={2023},
-      eprint={2306.15350},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+@article{Hrst2024,
+  title = {CellViT: Vision Transformers for precise cell segmentation and classification},
+  volume = {94},
+  ISSN = {1361-8415},
+  url = {http://dx.doi.org/10.1016/j.media.2024.103143},
+  DOI = {10.1016/j.media.2024.103143},
+  journal = {Medical Image Analysis},
+  publisher = {Elsevier BV},
+  author = {H\"{o}rst,  Fabian and Rempe,  Moritz and Heine,  Lukas and Seibold,  Constantin and Keyl,  Julius and Baldini,  Giulia and Ugurel,  Selma and Siveke,  Jens and Gr\"{u}nwald,  Barbara and Egger,  Jan and Kleesiek,  Jens},
+  year = {2024},
+  month = may,
+  pages = {103143}
 }
